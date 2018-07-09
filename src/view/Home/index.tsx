@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { observer } from 'mobx-react';
 import './index.scss';
 
 interface IHomeProps {
@@ -10,7 +9,6 @@ interface IHomeState {
 }
 
 
-@observer
 export default class Home extends React.Component<IHomeProps, IHomeState> {
   constructor(props: any) {
     super(props);
