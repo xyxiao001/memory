@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
+import './index.scss';
 
 interface IHomeProps {
 }
@@ -32,16 +33,14 @@ export default class Home extends React.Component<IHomeProps, IHomeState> {
     });
   }
 
-  public componentDidMount() {
-    console.log(this.state);
-  }
-
   public render() {
     return (
       <main>
-        <p>{ this.state.num }</p>
-        <button onClick={this.add}>add</button>
-        <button onClick={this.reduce}>reduce</button>
+        <div className="text-box">
+          <p>{ this.state.num }</p>
+          <button onClick={this.add}>add</button>
+          <button onClick={this.reduce}>reduce</button>
+          </div>
       </main>
     );
   }
