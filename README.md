@@ -1,1 +1,0 @@
-###  react + react-router + ts + mobx + scss
